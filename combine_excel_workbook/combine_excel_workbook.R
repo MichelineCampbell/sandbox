@@ -39,12 +39,12 @@ y <- list.files("combine_excel_workbook/data/") # get list of the files we just 
 ## for files appended x1
 ylistx1 <- which(endsWith(y, "x1.csv") == TRUE)
 
-datx1_1 <- read.csv(paste0("combine_excel_workbook/data/",y[ylistx1[1]])) 
+datx1_1 <- read.csv(paste0("combine_excel_workbook/data/",y[ylistx1[1]])) # read in csvs
 datx1_2 <- read.csv(paste0("combine_excel_workbook/data/",y[ylistx1[2]]))
 datx1_3 <- read.csv(paste0("combine_excel_workbook/data/",y[ylistx1[3]]))
 
 list_of_datasetsx1 <- list("page 1" = datx1_1, "page 2" = datx1_2, "page 3" = datx1_3) # replace "page 1" etc. with name of pages
-write.xlsx(list_of_datasetsx1, file = "combine_excel_workbook/combined_workbook_x1.xlsx")
+write.xlsx(list_of_datasetsx1, file = "combine_excel_workbook/combined_workbook_x1.xlsx") # write to xlsx
 
 ## for files appended x2
 ylistx2 <- which(endsWith(y, "x2.csv") == TRUE)
