@@ -5,5 +5,6 @@ combine_excel_workbook file provides code to combine csvs into xlsx (matching in
   in prep to run this over >1000 csvs so expecting to funtion-ise at some point
   help from https://stackoverflow.com/questions/27713310/easy-way-to-export-multiple-data-frame-to-multiple-excel-worksheets
 
-spatial_density plots world map + counts of gridded mock data
+spatial_density plots world map + counts of gridded mock data  
+used https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html as guide for map
 ![map](spatial_density/test_map.png?raw=true)
