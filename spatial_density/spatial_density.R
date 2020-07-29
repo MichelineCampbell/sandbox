@@ -33,5 +33,5 @@ ggplot(data = world) +
   scale_fill_viridis_c() +
   theme_classic() #is there any other theme?
 
-ggsave("spatial_density/test_map.png", width = 5, height = 2.5, units = "in")
+ggsave("spatial_density/test_map2.png", width = 5, height = 2.5, units = "in")
 

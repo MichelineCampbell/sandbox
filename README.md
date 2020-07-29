@@ -7,4 +7,4 @@ combine_excel_workbook file provides code to combine csvs into xlsx (matching in
 
 spatial_density plots world map + counts of gridded mock data  
 used https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html as guide for map
-![map](spatial_density/test_map.png?raw=true)
+![map](spatial_density/test_map2.png?raw=true)
