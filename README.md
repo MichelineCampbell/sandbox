@@ -6,4 +6,4 @@ combine_excel_workbook file provides code to combine csvs into xlsx (matching in
   help from https://stackoverflow.com/questions/27713310/easy-way-to-export-multiple-data-frame-to-multiple-excel-worksheets
 
 spatial_density plots world map + counts of gridded mock data
-![alt text](spatial_density/test_map.png?raw=true)
+![map](spatial_density/test_map.png?raw=true)
