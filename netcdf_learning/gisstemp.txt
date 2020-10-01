@@ -1,0 +1,33 @@
+File D:/CampbellM1/R_learning_space/gisstemp_2020/gistemp250_GHCNv4.nc (NC_FORMAT_CLASSIC):
+
+     2 variables (excluding dimension variables):
+        int time_bnds[nv,time]   
+        short tempanomaly[lon,lat,time]   
+            long_name: Surface temperature anomaly
+            units: K
+            scale_factor: 0.00999999977648258
+            cell_methods: time: mean
+            _FillValue: 32767
+
+     4 dimensions:
+        lat  Size:90
+            standard_name: latitude
+            long_name: Latitude
+            units: degrees_north
+        lon  Size:180
+            standard_name: longitude
+            long_name: Longitude
+            units: degrees_east
+        time  Size:1688
+            long_name: time
+            units: days since 1800-01-01 00:00:00
+            bounds: time_bnds
+        nv  Size:2
+[1] "vobjtovarid4: **** WARNING **** I was asked to get a varid for dimension named nv BUT this dimension HAS NO DIMVAR! Code will probably fail at this point"
+
+    5 global attributes:
+        title: GISTEMP Surface Temperature Analysis
+        institution: NASA Goddard Institute for Space Studies
+        source: http://data.giss.nasa.gov/gistemp/
+        Conventions: CF-1.6
+        history: Created 2020-09-11 17:20:23 by SBBX_to_nc 2.0 - ILAND=250,  IOCEAN=none,     Base: 1951-1980
