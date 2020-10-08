@@ -53,7 +53,7 @@ I downloaded the 'Surface air temperature (no ocean data), 250km smoothing' comp
 # data --------------------------------------------------------------------
 
 nc_data <- nc_open("D:/CampbellM1/R_learning_space/gisstemp_2020/gistemp250_GHCNv4.nc")
-
+# nc_data <- raster("D:/CampbellM1/R_learning_space/gisstemp_2020/gistemp250_GHCNv4.nc")
 
 # data cleaning -----------------------------------------------------------
 
@@ -70,11 +70,11 @@ tdate <- as.Date(t, origin=c('1800-01-01')) ## convert time (days since 18000101
 
 
 temp.array <- ncvar_get(nc_data, "tempanomaly") #extract temp anomaly data
-fillvalue <- ncatt_get(nc_data, "tempanomaly", "_FillValue") 
+fillvalue <- ncatt_get(nc_data, "tempanomaly", "_FillValue")
 nc_close(nc_data)
 
 temp.array[temp.array == fillvalue$value] <- NA ## replace fill value with NA
-temp.slice <- temp.array[, , 1688] ## pulls one month(?) of data out. 
+temp.slice <- temp.array[, , 1688] ## pulls one month(?) of data out.
 dim(temp.slice)
 dim(temp.array)
 
@@ -203,15 +203,19 @@ This uses the same ```cropped_gistemp``` data from the previous section.
 
 fakedata <- data.frame(t = seq(1:1688), fakey = rnorm(1688, mean = 20, sd = 1)* t^(0.2)) # make some synthetic data
 
-fun <- function(x) { # function to apply in raster::calc
-  cor(x, fakedata$fakey, method = "pearson") ## pearson's correlation of fake data and raster vals 
-}
+# fun <- function(x) { # function to apply in raster::calc
+#   cor(x, fakedata$fakey, method = "pearson") ## pearson's correlation of fake data and raster vals 
+# }
+
+
+fun <- function(x) { if (is.na(x[1])){ NA } else {lm(x ~ fakedata$fakey)$coefficients[2] }}  ### figure out what the if else is doing here...
 x2 <- raster::calc(cropped_gistemp, fun) # correlation!
 
 cropped_gistemp_e <- extract(cropped_gistemp, matrix(c(145, -30), ncol =2)) ## check correlation by extracting timeseries from ratserbrick
 cropped_gistemp_e <- t(data.frame(y = cropped_gistemp_e)) # make useable
 
-test <- cor(cropped_gistemp_e, fakedata$fakey) # correlation for extracted point timeseries and fake data
+# test <- cor(cropped_gistemp_e, fakedata$fakey) # correlation for extracted point timeseries and fake data
+test <- if (is.na(cropped_gistemp_e[1])){ NA } else {lm(cropped_gistemp_e ~ fakedata$fakey)$coefficients[2] }
 test
 x2cor <- extract(x2, matrix(c(145, -30), ncol =2)) # extract correlation
 x2cor ## hooray test == x2cor!
