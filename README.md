@@ -11,3 +11,5 @@ used https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html as guide for map
 
 netcdf_learning includes some code for basic manipulation of netcdf files (specifically spatio-temporal data). Initial how-to from https://rpubs.com/boyerag/297592.
 ![temp-anom](netcdf_learning/Gisstemp_Aug_anom.png?raw=true)
+
+aus_centred_robinson has some nightmare code to make an Aus-centred Robinson-projected map in ggplot. Help from https://stackoverflow.com/questions/56146735/visual-bug-when-changing-robinson-projections-central-meridian-with-ggplot2 and https://github.com/valentinitnelav/valentinitnelav.github.io/blob/master/gallery/Pacific%20centered%20world%20map%20with%20ggplot.R. ![robmap](aus_centred_robinson/world_map.png?raw=true)

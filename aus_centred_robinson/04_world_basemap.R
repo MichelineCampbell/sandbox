@@ -153,3 +153,9 @@ map <- ggplot(data = world_robinson) +
     labs(x = NULL,
          y = NULL)
 
+ggsave(filename = "aus_centred_robinson/world_map.png",
+       plot = map,
+       width = 20, 
+       height = 10,
+       units = "cm")
+
