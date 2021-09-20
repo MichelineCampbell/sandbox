@@ -1,0 +1,217 @@
+# Lough.Great Barrier Reef_Conical Rocks.2011
+#----------------------------------------------------------------------- 
+#                World Data Service for Paleoclimatology, Boulder 
+#                                  and 
+#                     NOAA Paleoclimatology Program 
+#             National Centers for Environmental Information (NCEI)
+#----------------------------------------------------------------------- 
+# Template Version 4.0
+# Encoding: UTF-8
+# NOTE: Please cite original publication, NOAA Landing Page URL, dataset and publication DOIs (where available), and date accessed when using downloaded data. If there is no publication information, please cite investigator, study title, NOAA Landing Page URL, and date accessed. 
+#
+# Description/Documentation lines begin with #
+# Data lines have no #
+#
+# NOAA_Landing_Page:  https://www.ncdc.noaa.gov/paleo/study/34073
+#   Landing_Page_Description: NOAA Landing Page of this file's parent study, which includes all study metadata.
+#
+# Study_Level_JSON_Metadata: https://www.ncei.noaa.gov/pub/data/metadata/published/paleo/json/  (assigned by WDS Paleo) 
+#   Study_Level_JSON_Description: JSON metadata of this data file's parent study, which includes all study metadata.
+#
+# Data_Type: Luminescence
+#
+# Dataset_DOI: 
+#
+# Science_Keywords: 
+#--------------------
+# Resource_Links
+#   
+# Data_Download_Resource: https://www.ncei.noaa.gov/pub/data/paleo/reconstructions/croke2021/
+#   Data_Download_Description: 
+#
+# Supplemental_Download_Resource: 
+#   Supplemental_Description: 
+#
+# Related_Online_Resource: 
+#   Related_Online_Description:
+#
+# Original_Source_URL: https://www.ncdc.noaa.gov/paleo/study/10292 
+#   Original_Source_Description: 
+
+#--------------------
+# Contribution_Date
+#    Date: 2021-09-20
+#--------------------
+# File_Last_Modified_Date
+#     Date: 
+#--------------------
+# Title
+#     Study_Name: Lough.Great Barrier Reef_Conical Rocks.2011
+#--------------------
+# Investigators
+#   Investigators: Janice M Lough
+#--------------------
+# Description_Notes_and_Keywords
+#   Description:  
+#--------------------
+# Publication 
+#   Authors: Janice M Lough
+#   Published_Date_or_Year: 2011
+#   Published_Title: Great Barrier Reef coral luminescence reveals rainfall variability over northeastern Australia since the 17th century
+#   Journal_Name: Paleoceanography
+#   Volume: 
+#   Edition: 
+#   Issue: 
+#   Pages:
+#   Report_Number: 
+#   DOI: https://doi.org/10.1029/2010PA002050
+#   Publication_Place: 
+#   Publisher:
+#   ISBN: 
+#   Online_Resource: 
+#   Other_Reference_Details: 
+#   Full_Citation: Lough, J.M., 2011. Great Barrier Reef coral luminescence reveals rainfall variability over northeastern Australia since the 17th century. Paleoceanography, 26, 2. https://doi.org/10.1029/2010PA002050
+#   Abstract: 
+#--------------------
+# Funding_Agency 
+#   Funding_Agency_Name: 
+#   Grant: NA
+#--------------------
+# Site_Information 
+#   Site_Name: Conical Rocks
+#   Location: Great Barrier Reef
+#   Northernmost_Latitude: -15.13
+#   Southernmost_Latitude: -15.13
+#   Easternmost_Longitude: 145.32
+#   Westernmost_Longitude: 145.32
+#   Elevation_m: NA
+#--------------------
+# Data_Collection  
+#   Collection_Name: 
+#   Earliest_Year:  1888 
+#   Most_Recent_Year:  1983 
+#   Time_Unit: CE
+#   Core_Length_m: 
+#   Parameter_Keywords: 
+#   Notes:
+#--------------------
+# Species 
+#   Species_Name:
+#   Common_Name: 
+#   Tree_Species_Code: 
+#--------------------
+# Variables  
+#
+## depth  depth, , , NA, , Coral, , ,N,
+## yearCE year, , , Common Era Year, ,Coral, , ,N,
+## age  Reported Age, , , CE/BCE , ,Coral, , , N,
+## Luminescence  Luminescence, , , Unitless, , Coral , , , N,  
+## Positive Data Error  Positive Data Error, , , Unitless, , Coral, , , N,
+## Negative Data Error  Negative Data Error, , , Unitless, , Coral, , , N,
+## Negative Age Uncertainty  Negative Age Uncertainty, , , years, , Coral, , , N,
+## Positive Age Uncertainty  Positive Age Uncertainty, , , years, , Coral, , , N,
+## Quality Code  QC codes for data. QC codes, , , , , , , ,C,  1 = raw; 4 = reconstruction; 21 = outlier; 22 = outlier ID needs to be revisted; 23 = outlier test not applied; 40 = NA   
+#
+#--------------------
+# Data:
+# Data lines follow (have no #)
+# Data line format - tab-delimited text, variable short name as header
+# Missing_Values: NA
+#
+Year  Depth  Age  Luminescence  DataErrorPos  DataErrorNeg  AgeUncertNeg  AgeUncertPos  QC
+1888  NA  1888  0.105  NA  NA  NA  NA  1
+1889  NA  1889  0.115  NA  NA  NA  NA  1
+1890  NA  1890  0.239  NA  NA  NA  NA  1
+1891  NA  1891  0.206  NA  NA  NA  NA  1
+1892  NA  1892  0.246  NA  NA  NA  NA  1
+1893  NA  1893  0.277  NA  NA  NA  NA  1
+1894  NA  1894  0.221  NA  NA  NA  NA  1
+1895  NA  1895  0.172  NA  NA  NA  NA  1
+1896  NA  1896  0.224  NA  NA  NA  NA  1
+1897  NA  1897  0.112  NA  NA  NA  NA  1
+1898  NA  1898  0.23  NA  NA  NA  NA  1
+1899  NA  1899  0.23  NA  NA  NA  NA  1
+1900  NA  1900  0.109  NA  NA  NA  NA  1
+1901  NA  1901  0.129  NA  NA  NA  NA  1
+1902  NA  1902  0.162  NA  NA  NA  NA  1
+1903  NA  1903  0.277  NA  NA  NA  NA  1
+1904  NA  1904  0.264  NA  NA  NA  NA  1
+1905  NA  1905  0.193  NA  NA  NA  NA  1
+1906  NA  1906  0.176  NA  NA  NA  NA  1
+1907  NA  1907  0.0880000000000001  NA  NA  NA  NA  1
+1908  NA  1908  0.178  NA  NA  NA  NA  1
+1909  NA  1909  0.0680000000000001  NA  NA  NA  NA  1
+1910  NA  1910  0.228  NA  NA  NA  NA  1
+1911  NA  1911  0.244  NA  NA  NA  NA  1
+1912  NA  1912  0.103  NA  NA  NA  NA  1
+1913  NA  1913  0.198  NA  NA  NA  NA  1
+1914  NA  1914  0.092  NA  NA  NA  NA  1
+1915  NA  1915  0.084  NA  NA  NA  NA  1
+1916  NA  1916  0.116  NA  NA  NA  NA  1
+1917  NA  1917  0.16  NA  NA  NA  NA  1
+1918  NA  1918  0.197  NA  NA  NA  NA  1
+1919  NA  1919  0.237  NA  NA  NA  NA  1
+1920  NA  1920  0.075  NA  NA  NA  NA  1
+1921  NA  1921  0.197  NA  NA  NA  NA  1
+1922  NA  1922  0.34  NA  NA  NA  NA  1
+1923  NA  1923  0.155  NA  NA  NA  NA  1
+1924  NA  1924  0.216  NA  NA  NA  NA  1
+1925  NA  1925  0.115  NA  NA  NA  NA  1
+1926  NA  1926  0.1745  NA  NA  NA  NA  1
+1927  NA  1927  0.0890000000000001  NA  NA  NA  NA  1
+1928  NA  1928  0.29  NA  NA  NA  NA  1
+1929  NA  1929  0.205  NA  NA  NA  NA  1
+1930  NA  1930  0.168  NA  NA  NA  NA  1
+1931  NA  1931  0.174  NA  NA  NA  NA  1
+1932  NA  1932  0.103  NA  NA  NA  NA  1
+1933  NA  1933  0.202  NA  NA  NA  NA  1
+1934  NA  1934  0.213  NA  NA  NA  NA  1
+1935  NA  1935  0.217  NA  NA  NA  NA  1
+1936  NA  1936  0.202  NA  NA  NA  NA  1
+1937  NA  1937  0.234  NA  NA  NA  NA  1
+1938  NA  1938  0.143  NA  NA  NA  NA  1
+1939  NA  1939  0.083  NA  NA  NA  NA  1
+1940  NA  1940  0.223  NA  NA  NA  NA  1
+1941  NA  1941  0.325  NA  NA  NA  NA  1
+1942  NA  1942  0.305  NA  NA  NA  NA  1
+1943  NA  1943  0.111  NA  NA  NA  NA  1
+1944  NA  1944  0.196  NA  NA  NA  NA  1
+1945  NA  1945  0.147  NA  NA  NA  NA  1
+1946  NA  1946  0.216  NA  NA  NA  NA  1
+1947  NA  1947  0.146  NA  NA  NA  NA  1
+1948  NA  1948  0.108  NA  NA  NA  NA  1
+1949  NA  1949  0.136  NA  NA  NA  NA  1
+1950  NA  1950  0.329  NA  NA  NA  NA  1
+1951  NA  1951  0.351  NA  NA  NA  NA  1
+1952  NA  1952  0.153  NA  NA  NA  NA  1
+1953  NA  1953  0.17  NA  NA  NA  NA  1
+1954  NA  1954  0.209  NA  NA  NA  NA  1
+1955  NA  1955  0.146  NA  NA  NA  NA  1
+1956  NA  1956  0.261  NA  NA  NA  NA  1
+1957  NA  1957  0.178  NA  NA  NA  NA  1
+1958  NA  1958  0.215  NA  NA  NA  NA  1
+1959  NA  1959  0.275  NA  NA  NA  NA  1
+1960  NA  1960  0.209  NA  NA  NA  NA  1
+1961  NA  1961  0.105  NA  NA  NA  NA  1
+1962  NA  1962  0.297  NA  NA  NA  NA  1
+1963  NA  1963  0.273  NA  NA  NA  NA  1
+1964  NA  1964  0.25  NA  NA  NA  NA  1
+1965  NA  1965  0.191  NA  NA  NA  NA  1
+1966  NA  1966  0.151  NA  NA  NA  NA  1
+1967  NA  1967  0.228  NA  NA  NA  NA  1
+1968  NA  1968  0.207  NA  NA  NA  NA  1
+1969  NA  1969  0.135  NA  NA  NA  NA  1
+1970  NA  1970  0.219  NA  NA  NA  NA  1
+1971  NA  1971  0.349  NA  NA  NA  NA  1
+1972  NA  1972  0.285  NA  NA  NA  NA  1
+1973  NA  1973  0.347  NA  NA  NA  NA  1
+1974  NA  1974  0.463  NA  NA  NA  NA  21
+1975  NA  1975  0.228  NA  NA  NA  NA  1
+1976  NA  1976  0.253  NA  NA  NA  NA  1
+1977  NA  1977  0.31  NA  NA  NA  NA  1
+1978  NA  1978  0.128  NA  NA  NA  NA  1
+1979  NA  1979  0.231  NA  NA  NA  NA  1
+1980  NA  1980  0.191  NA  NA  NA  NA  1
+1981  NA  1981  0.189  NA  NA  NA  NA  1
+1982  NA  1982  0.186  NA  NA  NA  NA  1
+1983  NA  1983  0.216  NA  NA  NA  NA  1
