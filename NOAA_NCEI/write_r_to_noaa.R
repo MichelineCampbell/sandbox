@@ -137,19 +137,23 @@ line15 <- "# Species
 #   Common_Name: 
 #   Tree_Species_Code: 
 #--------------------"
-
+line15.1 <- "#--------------------
+# Chronology_Information
+#   Chronology:
+#
+#--------------------"
 # 10 components: what, material, error, units, seasonality, archive, detail, method, C or N for Character or Numeric data, additional_information)
 line16 <- paste("# Variables  
 #
-## depth  depth, , , ", dat$Depth.Units[1],", , ",dat$ArchiveType[1],", , ,N,
-## yearCE year, , , Common Era Year, ,", dat$ArchiveType[1],", , ,N,
-## age  Reported Age, , , ", dat$AgeReference[1], " , ,", dat$ArchiveType[1], ", , , N,
-## ", dat$ProxyType[1],"  ", dat$ProxyType[1],", , , ", dat$Unit[1], ", , ", dat$ArchiveType[1]," , , , N,  
-## Positive Data Error  Positive Data Error, , , ", dat$Unit[1], ", , ", dat$ArchiveType[1], ", , , N,
-## Negative Data Error  Negative Data Error, , , ", dat$Unit[1], ", , ", dat$ArchiveType[1], ", , , N,
-## Negative Age Uncertainty  Negative Age Uncertainty, , , years, , ", dat$ArchiveType[1], ", , , N,
-## Positive Age Uncertainty  Positive Age Uncertainty, , , years, , ", dat$ArchiveType[1], ", , , N,
-## Quality Code  QC codes for data. QC codes, , , , , , , ,C,  1 = raw; 4 = reconstruction; 21 = outlier; 22 = outlier ID needs to be revisted; 23 = outlier test not applied; 40 = NA   
+## depth  depth,  , , ", dat$Depth.Units[1],",  , ",dat$ArchiveType[1],", , , N,
+## yearCE year, , , Common Era Year,  , ", dat$ArchiveType[1],",  , , N,
+## age  Reported Age, , , ", dat$AgeReference[1], ",  , ", dat$ArchiveType[1], ", , , N,
+## ", dat$ProxyType[1],"  ", dat$ProxyType[1]," , , , ", dat$Unit[1], ",  , ", dat$ArchiveType[1],",  , , N,
+## Positive Data Error  Positive Data Error,  , , ", dat$Unit[1], ",  , ", dat$ArchiveType[1], ", , , N,
+## Negative Data Error  Negative Data Error,  , , ", dat$Unit[1], ",  , ", dat$ArchiveType[1], ", , , N,
+## Negative Age Uncertainty  Negative Age Uncertainty,  , , years,  , ", dat$ArchiveType[1], ", , , N,
+## Positive Age Uncertainty  Positive Age Uncertainty,  , , years,  , ", dat$ArchiveType[1], ", , , N,
+## Quality Code  QC codes for data. QC codes, , , , , , , , C,  1 = raw; 4 = reconstruction; 21 = outlier; 22 = outlier ID needs to be revisted; 23 = outlier test not applied; 40 = NA   
 #
 #--------------------", sep = "")
 
@@ -165,7 +169,7 @@ line17<- "# Data:
 # Missing_Values: NA
 #"
 
-join <- c(line1, line2, line3, line4, line5, line6.1, line6, line7,  line8, line9, line10, line11, line12, line13, line14, line15, line16, line17)
+join <- c(line1, line2, line3, line4, line5, line6.1, line6, line7,  line8, line9, line10, line11, line12, line13, line14, line15, line15.1, line16, line17)
 
 
 # write to text -----------------------------------------------------------
