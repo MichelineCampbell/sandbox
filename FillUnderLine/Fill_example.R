@@ -18,7 +18,7 @@ grad_df <- data.frame(yintercept = seq(10, 31, length.out = 1000),
                        alpha = seq(1,0.3, length.out = 1000))
 
 
-ggplot(df, aes(x, y)) + 
+plot <- ggplot(df, aes(x, y)) + 
   geom_area(data = df, fill = "black") +
   geom_hline(data = grad_df, aes(yintercept = yintercept, alpha = alpha),
   size = 0.05, colour = "white") +
@@ -43,4 +43,6 @@ ggplot(df, aes(x, y)) +
   coord_cartesian(ylim = c(10, 32.5),expand = FALSE)
   # scale_x_date(breaks = "months", expand = c(0.02, 0))
 
+ggsave("FillUnderLine/fillUnderLine.png",
+      plot)
 NULL
